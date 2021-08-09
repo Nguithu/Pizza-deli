@@ -35,9 +35,16 @@
              <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
             </div>
 
-             <div class="shop-item-topping">
-              <input type="text" value="Peproni">
-            </div>
+            <select name="Toppings" id="topping" onchange="topping();">
+              <option value="">Peproni</option>
+              <option value="">Mushrooms</option>
+              <option value="">Onions</option>
+              <option value="">Bacon</option>
+              <option value="">Extra Cheese</option>
+              <option value="">Sausage</option>
+              <option value="">Green Pepper</option>
+            </select>
+            <input type="text" id="txtvalue" value="ksh100/=">
 
         </div>
 
@@ -45,12 +52,19 @@
           <span class="shop-item-title">Medium-pizza</span>
            <img class="shop-item-image" src="./assets/piz 2.jpg" alt="" width="200">
            <div class="shop-item-details">
-             <span class="shop-item-price">ksh.1800/=</span>
+             <span class="shop-item-price">ksh.1800.00/=</span>
              <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
             </div>
-             <div class="shop-item-topping">
-              <input type="text" value="Peproni" width="50">
-            </div>
+            <select name="Toppings" id="topping" onchange="topping();">
+              <option value="">Peproni</option>
+              <option value="">Mushrooms</option>
+              <option value="">Onions</option>
+              <option value="">Bacon</option>
+              <option value="">Extra Cheese</option>
+              <option value="">Sausage</option>
+              <option value="">Green Pepper</option>
+            </select>
+            <input type="text" id="txtvalue" value="ksh100/=">
 
             
           </div>
@@ -59,12 +73,19 @@
             <span class="shop-item-title">Small-pizza</span>
              <img class="shop-item-image" src="./assets/piz 1.png" alt="" width="200">
              <div class="shop-item-details">
-               <span class="shop-item-price">ksh.900=</span>
+               <span class="shop-item-price">ksh.900.00=</span>
                <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
               </div>
-              <div class="shop-item-topping">
-                <input type="text" value="Peproni">
-              </div>
+              <select name="Toppings" id="topping" onchange="topping();">
+                <option value="100/=">Peproni</option>
+                <option value="120/=">Mushrooms</option>
+                <option value="99/=">Onions</option>
+                <option value="">Bacon</option>
+                <option value="">Extra Cheese</option>
+                <option value="">Sausage</option>
+                <option value="">Green Pepper</option>
+              </select>
+              <input type="text" id="txtvalue" value="ksh100/=">
             </div>
       
       
@@ -86,12 +107,12 @@
                   <span class="cart-item-title">Small-pizza</span>
               </div>
 
-              <span class="cart-price cart-column">ksh 900/=</span>
+              <span class="cart-price cart-column">ksh 900.00/=</span>
 
               
 
               <div class="cart-quantity cart-column">
-                  <input class="cart-quantity-input" type="number" value="">
+                  <input class="cart-quantity-input" type="number" value="1">
                   <button class="btn btn-danger" type="button">REMOVE</button>
               </div>
               
@@ -103,37 +124,36 @@
                   <span class="cart-item-title">Medium-pizza</span>
               </div>
 
-              <span class="cart-price cart-column">ksh1200/=</span>
+              <span class="cart-price cart-column">ksh1200.00/=</span>
 
               
 
               <div class="cart-quantity cart-column">
-                  <input class="cart-quantity-input" type="number" value="">
+                  <input class="cart-quantity-input" type="number" value="1">
                   <button class="btn btn-danger" type="button">REMOVE</button>
               </div>
           </div>
       </div>
       <div class="cart-total">
           <strong class="cart-total-title">Total</strong>
-          <span class="cart-total-price">ksh2100</span>
+          <span class="cart-total-price">ksh 2100.00/=</span>
       </div>
       <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
   </section>
+   <div class="form">
+  <h1>For Delivery</h1>
+  <h2>Please select your location below</h2>
+  <select name="" id="location"> 
+    <option value=" Please input your location">-- Select Location --</option>
+    <option value=" Order will be delivered to your location upon checkout cost 200/=">Saika</option>
+    <option value=" Order will be delivered to your location upon checkout cost 250/=">Buruburu</option>
+    <option value=" Order will be delivered to your location upon checkout cost 180/=">Umoja</option>
+    <option value=" Order will be delivered to your location upon checkout cost 150/=">Kayole</option>
+    <option value=" Order will be delivered to your location upon checkout cost 500/=">Kilimani</option>
+  </select> <br>
 
-   <div class="myLocation">
-     <label for='Location'>Location</label>
-     <select id="Location">
-      <option value="location">Select location</option>
-      <option value="Kayole">Kayole</option>
-      <option value="Buruburu">Buruburu</option>
-      <option value="Saika">Saika</option>
-      <option value="Kilimani">Kilimani</option>
-      <option value="Umoja">Umoja</option>
-      <option value="South C">South C</option>
-      
-    </select>
-  <button id="sumit">Submit</button>
-
+<button  onclick="submit()" id="submit">Submit</button>
+</div>
    </div>
 
 

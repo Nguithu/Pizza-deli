@@ -5,6 +5,11 @@ if (document.readyState == 'loading') {
 }
 
 
+function topping(){
+  var topInsert = document.getElementById('topping');
+  var displaytext = topInsert.options[topInsert.innerText].text;
+  document.getElementById('txtvalue') .value=displaytext;
+}
 function ready() {
   var removeCartItemButtons = document.getElementsByClassName('btn-danger')
   for (var i = 0; i < removeCartItemButtons.length; i++) {
@@ -99,7 +104,10 @@ function updateCartTotal() {
       var quantity = quantityElement.value
       total = total + (price * quantity)
   }
-  total = Math.round(total * 100) / 100
+  total = Math.round(total * 10000) / 100
   document.getElementsByClassName('cart-total-price')[0].innerText = 'ksh' + total
 }
-
+function submit(){
+  var select= document.getElementById('location');
+  alert(select.options[select.selectedIndex].value)
+}

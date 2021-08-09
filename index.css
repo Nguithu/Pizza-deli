@@ -146,11 +146,20 @@ body{
   border-radius: 5px;
 }
 
-.Location{
-  display: flex;
-  font-size: 1.7em;
-  justify-content: center;
+.form{
   padding: 50px;
+  justify-content: center;
   text-align: center;
+}
+#dropdown{
+  
+  border-radius: 5px;
+}
+#submit{
+  display: block;
+  margin: 40px auto 80px auto;
+  font-size: 1.50em;
+  background-color: rgb(190, 163, 7);
+  border-radius: 5px;
 
 }
